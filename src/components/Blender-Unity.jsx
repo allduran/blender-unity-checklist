@@ -103,7 +103,7 @@ export default function BlenderUnityChecklist() {
       minHeight: "100vh",
       background: "#0E0F14",
       fontFamily: "'Courier New', Courier, monospace",
-      color: "#C8C8D4",
+      color: "#e0e0ef",
       padding: "24px 16px",
     }}>
       {/* Header */}

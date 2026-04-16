@@ -1,4 +1,4 @@
-import { BlenderUnityChecklist } from './components/Blender-Unity.jsx'
+import BlenderUnityChecklist from './components/Blender-Unity.jsx'
 
 function App() {
   return (
