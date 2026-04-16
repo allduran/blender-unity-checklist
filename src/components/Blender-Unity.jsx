@@ -110,13 +110,13 @@ export default function BlenderUnityChecklist() {
       <div style={{ maxWidth: 680, margin: "0 auto" }}>
         <div style={{ marginBottom: 32 }}>
           <div style={{ display: "flex", alignItems: "baseline", gap: 12, marginBottom: 4 }}>
-            <span style={{ fontSize: 11, letterSpacing: 4, color: "#5BC8A8", textTransform: "uppercase" }}>
+            <span style={{ fontSize: 16, letterSpacing: 4, color: "#5BC8A8", textTransform: "uppercase" }}>
               PIPELINE
             </span>
-            <span style={{ fontSize: 11, letterSpacing: 2, color: "#444" }}>v1.0</span>
+            <span style={{ fontSize: 16, letterSpacing: 2, color: "#e0e0ef" }}>v1.0</span>
           </div>
           <h1 style={{
-            fontSize: 26,
+            fontSize: 32,
             fontWeight: 700,
             letterSpacing: -0.5,
             color: "#F0EEE8",
@@ -125,7 +125,7 @@ export default function BlenderUnityChecklist() {
           }}>
             Blender → Unity
           </h1>
-          <p style={{ fontSize: 12, color: "#555", margin: 0 }}>
+          <p style={{ fontSize: 16, color: "#e0e0ef", margin: 0 }}>
             Low poly · URP · Unity 6
           </p>
         </div>
@@ -133,8 +133,8 @@ export default function BlenderUnityChecklist() {
         {/* Progress bar global */}
         <div style={{ marginBottom: 36 }}>
           <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
-            <span style={{ fontSize: 11, color: "#777", letterSpacing: 2 }}>PROGRESO TOTAL</span>
-            <span style={{ fontSize: 13, color: pct === 100 ? "#5BC8A8" : "#E8C547", fontWeight: 700 }}>
+            <span style={{ fontSize: 16, color: "#c5c5c5", letterSpacing: 2 }}>PROGRESO TOTAL</span>
+            <span style={{ fontSize: 16, color: pct === 100 ? "#5BC8A8" : "#E8C547", fontWeight: 700 }}>
               {doneItems}/{totalItems} — {pct}%
             </span>
           </div>
@@ -179,7 +179,7 @@ export default function BlenderUnityChecklist() {
                 <span style={{
                   flex: 1,
                   textAlign: "left",
-                  fontSize: 12,
+                  fontSize: 16,
                   letterSpacing: 3,
                   fontWeight: 700,
                   color: allDone ? phase.color : "#888",
@@ -187,7 +187,7 @@ export default function BlenderUnityChecklist() {
                 }}>
                   {phase.phase}
                 </span>
-                <span style={{ fontSize: 11, color: allDone ? phase.color : "#555" }}>
+                <span style={{ fontSize: 11, color: allDone ? phase.color : "#b5b3b3" }}>
                   {prog.done}/{prog.total}
                 </span>
                 <div style={{ width: 48, height: 2, background: "#1E1F26", borderRadius: 2 }}>
@@ -200,8 +200,8 @@ export default function BlenderUnityChecklist() {
                   }} />
                 </div>
                 <span style={{
-                  fontSize: 10,
-                  color: "#444",
+                  fontSize: 16,
+                  color: "#b4b3b3",
                   transform: isOpen ? "rotate(90deg)" : "rotate(0deg)",
                   transition: "transform 0.2s",
                   display: "inline-block",
@@ -259,7 +259,7 @@ export default function BlenderUnityChecklist() {
                           <span style={{
                             flex: 1,
                             fontSize: 12,
-                            color: done ? "#555" : "#B8B8C4",
+                            color: done ? "#555" : "#e0e0ef",
                             textDecoration: done ? "line-through" : "none",
                             textDecorationColor: "#444",
                             transition: "color 0.15s",
@@ -298,7 +298,7 @@ export default function BlenderUnityChecklist() {
                             borderTop: `1px solid ${phase.color}22`,
                           }}>
                             <span style={{
-                              fontSize: 11,
+                              fontSize: 12,
                               color: phase.color + "BB",
                               lineHeight: 1.5,
                               fontStyle: "italic",
@@ -327,7 +327,7 @@ export default function BlenderUnityChecklist() {
           justifyContent: "space-between",
           alignItems: "center",
         }}>
-          <span style={{ fontSize: 11, color: "#444", letterSpacing: 2 }}>
+          <span style={{ fontSize: 16, color: "#e0e0ef", letterSpacing: 2 }}>
             {pct === 100 ? "✓ READY TO IMPORT" : "PIPELINE IN PROGRESS"}
           </span>
           <button
@@ -336,10 +336,10 @@ export default function BlenderUnityChecklist() {
               background: "none",
               border: "1px solid #222",
               borderRadius: 4,
-              color: "#555",
+              color: "#e0e0ef",
               fontSize: 10,
               letterSpacing: 2,
-              padding: "5px 10px",
+              padding: "8px 16px",
               cursor: "pointer",
               textTransform: "uppercase",
             }}
